@@ -5,11 +5,10 @@ Diferente dos arrays, que são como prateleiras fixas onde os objetos ficam lado
 
 Em c, podemos definir um nó como uma struct, assim:
 ```c 
-<pre> 
 struct No {
     int valor;
     struct No* proximo; 
-    }; </pre>
+    };
 ```
 >Temos um campos para armazenar dados (neste caso valor), </br> e também sempre teremos um outro campo para armazenar o endereço do próximo nó. 
 

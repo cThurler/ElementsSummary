@@ -19,13 +19,11 @@ E se removemos um elemento, será o 1, pois ele foi o primeiro a entrar.
 
 Exemplo simples de uma fila em C:
 ```c
-<pre>
 struct Fila {
     int dados[100];
     int inicio;
     int fim;
 };
-</pre>
 ```
 
 >Esse exemplo usa um array fixo para simular uma fila. Para algo mais flexível, seria possível usar ponteiros e alocação dinâmica.
@@ -49,12 +47,10 @@ A pilha segue o princípio LIFO – Last In, First Out, ou seja, o último eleme
 Se você empilhar o número 5, ele vai para o topo. Se remover, o 5 será o primeiro a sair.
 
 ```c
-<pre>
 struct Pilha {
     int dados[100];
     int topo;
 };
-</pre>
 ```
 >O campo topo armazena o índice do elemento mais recente da pilha.
 

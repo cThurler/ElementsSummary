@@ -23,9 +23,9 @@ Supondo que cada int ocupa 4 bytes, a memória poderia, por exemplo, ficar assim
 | 0x1004     | 20     |
 | 0x1008     | 30     |
 | 0x100C     | 40     |
-<pre> 
 ```c 
-int numeros[5] = {10, 20, 30, 40, 50}; ``` </pre>
+int numeros[5] = {10, 20, 30, 40, 50}; 
+```
 
 > A ideia aqui é que o compilador sabe que </br>para acessar o numeros[2], basta ir até </br>**endereço_base + 2 × sizeof(int) → 0x1000 + 8 = 0x1008**. 
 
@@ -33,10 +33,8 @@ Esse modelo de organização permite acessos extremamente rápidos, porque não 
 
 No nível mais baixo (por exemplo, em C), arrays são essencialmente ponteiros para o primeiro elemento. Então, isso:
 ```c
-<pre>
-    int *ponteiro = numeros; 
-    printf("%d", *(ponteiro + 2)); // imprime 30 
-     </pre>
+int *ponteiro = numeros; 
+printf("%d", *(ponteiro + 2)); // imprime 30 
 ```
 
 Está acessando a terceira posição do array via aritmética de ponteiros. Isso reforça a ideia de que os elementos estão em posições de memória ordenadas e calculáveis.

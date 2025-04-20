@@ -1,0 +1,51 @@
+# O que é complexidade de algoritmo?
+
+A **complexidade de um algoritmo** é uma medida que expressa o quanto de **tempo** e/ou **memória** ele consome em relação ao tamanho da entrada. Essa medida é essencial para entender a eficiência de um algoritmo e comparar diferentes soluções para um mesmo problema.
+
+---
+
+## Tipos de complexidade
+
+### 1. Complexidade de Tempo
+Refere-se à quantidade de operações ou passos que o algoritmo realiza conforme o tamanho da entrada aumenta.
+
+### 2. Complexidade de Espaço
+Refere-se à quantidade de memória adicional que o algoritmo utiliza além da entrada.
+
+---
+
+## Notações comuns
+Usamos **notações** para descrever o comportamento do algoritmo nos piores, melhores ou casos médios:
+
+- **O(n)**: Crescimento linear (tempo cresce proporcional ao tamanho da entrada)
+- **O(1)**: Tempo constante (independe do tamanho da entrada)
+- **O(n^2)**: Crescimento quadrático (ex: algoritmos de ordenação simples)
+- **O(log n)**: Crescimento logarítmico (ex: busca binária)
+- **O(n log n)**: Misto de linear com logarítmico (ex: mergesort)
+
+---
+
+## Exemplo simples
+Como exemplo, vamos analizar uma função que faz a soma dos elementos de um array:
+```c
+int soma(int arr[], int n) {
+    int total = 0;
+    for (int i = 0; i < n; i++) {
+        total += arr[i];
+    }
+    return total;
+}
+```
+Neste exemplo:
+- Complexidade de tempo: **O(n)** (um loop que percorre todos os elementos)
+- Complexidade de espaço: **O(1)** (usa apenas uma variável adicional `total`)
+
+---
+
+## Por que importa?
+- Ajuda a prever a escalabilidade do programa.
+- Permite escolher o algoritmo mais eficiente.
+- Economiza recursos em ambientes de tempo ou memória limitados.
+
+A complexidade não garante que um algoritmo é rápido, mas ajuda a entender como ele se comporta conforme o problema cresce.
+

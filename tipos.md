@@ -23,6 +23,7 @@ O tipo `int` é um tipo numérico usado para armazenar inteiros. O tamanho de um
 `*Sinal: 1 bit (positivo ou negativo)`
 `*Magnitude: 15 bits (para representar o valor absoluto do número)`
 - **Intervalo**: -32.768 a 32.767
+- **Descrição**: utilizado para poupar espaço quando serão armazenados números pequenos.
 
 O tipo `short` armazena inteiros menores e é alocado com **2 bytes**. O motivo para isso é a necessidade de otimizar o uso de memória quando os valores que precisam ser armazenados são pequenos. Embora o `short` ocupe menos espaço do que o `int`, sua capacidade de armazenar valores é mais limitada.
 
@@ -135,4 +136,4 @@ A alocação de 1 bit para cada valor booleano poderia poderia causar desperdíc
 | `long`     | 4 ou 8           | Inteiros maiores              |
 | `float`    | 4                | Números com ponto decimal     |
 | `double`   | 8                | Números decimais precisos     |
-| `_Bool`    | 1                | Verdadeiro ou falso           |
+| `boolean`  | 1                | Verdadeiro ou falso           |
